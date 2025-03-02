@@ -1,0 +1,12 @@
+
+drop database if exists contactform_pc;
+create database contactform_pc;
+use contactform_pc;
+
+create table contactform(
+  name varchar(255),
+  mail varchar(255),
+  age int(11),
+  comments varchar(255)
+);
+

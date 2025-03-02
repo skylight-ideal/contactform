@@ -1,7 +1,8 @@
 <?php
   
 mb_internal_encoding("utf8");
-$pdo= new PDO("mysql:dbname=les_phpb16;host=localhost;","root","");
+$pdo = new PDO("mysql:dbname=contactform_pc;host=localhost;", "root", "");
+
 $sql = "insert into contactform (name, mail, age, comments) values (?, ?, ?, ?)";
 $stmt = $pdo->prepare($sql);
 
@@ -13,14 +14,6 @@ $stmt->bindValue(4, $_POST['comments']);
 
 $stmt->execute();
 ?>
-
-
-<!-- 
-W:\__777MR-GiAe1y2\__177FVL-GiAe1y2\___777VMW-GiAe1y2\_350Prog\_344htdocs_xampp_GA1y2m\725ProgrammerCollege\555Html\555PHP-b16\contactform
-
-http://localhost/725ProgrammerCollege/555Html/555PHP-b16/contactform/index.html
-
--->
 
 
 <!doctype HTML>

@@ -33,9 +33,6 @@
     <p>年齢
       <br>
       <?php
-        //echo $_POST['age'."崔];
-        //変なコメントを混ぜた上に　"の後をとじなかった ため、エラーが起きた。
-        //のちのphp文でも""に囲まれかけるような状態になる
         echo $_POST['age'];
       ?>
     </p> 
@@ -61,25 +58,17 @@
           <input type="hidden" value="<?php echo $_POST['comments'] ?>" name="comments">
         </form>
       </div>
-<!-- /* 
-form action= をリンク先のURL(ファイル名),今もってる変数を送る対象のファイル
-input value= ボタン上に表示されるテキスト
-input type= hidden 今持っている変数をweb上に表示しない
-*/ -->
 
   </div>
 </body>
 
+</html>
 
 <!-- 
---prog12345
---browser12345
-ctrl shift リロードボタンで更新
-プログラムが反映されないとき
-強制リロードで対応
+form action= sample.php 
+sample.phpをリンク先のURL(ファイル名),今もってる変数を送る対象のファイル
 
+input value= ボタン上に表示されるテキスト
 
-オブジェクト指向
-
--->
-
+input type= hidden 今持っている変数をweb上に表示しない
+ -->
